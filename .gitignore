@@ -1,4 +1,4 @@
 node_modules
 
-/converted
-/temp
+/converted/*
+/temp/*

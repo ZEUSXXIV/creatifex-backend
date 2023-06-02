@@ -8,6 +8,8 @@ const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
 
+const PORT = process.env.PORT || 8080
+
 
 
 const app = express();
@@ -70,6 +72,6 @@ app.post("/upload", (req, res) => {
   });
 });
 
-app.listen(8080, () => {
-  console.log("Server running on port 8080");
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
